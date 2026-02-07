@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Planet Fitness | Schedule</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="Schedule.css">
+    <link rel="icon" href="Images/Planet_Fitness Icon.svg" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!----------------------------Navigation Bar------------------------->
+<header>
+    <nav>
+      <!---------------Planet Fitness Logo------------------->
+      <img class="LOGO" src="Images/Planet_Fitness Logo.svg" alt="Planet Fitness Logo">
+      <!--------Navigation Bar Links-------->
+      <div class="Navlinks">    
+        <a href="../Home_Page/home.html"><i class="fa-solid fa-house"></i> Home</a>
+        <!-----------Dropdown Content-------->
+          <div class="dropdown">
+              <!-----------Categories btn-------->
+              <button class="dropbtn"><i class="fa-solid fa-list fa-1x"></i> Categories <i class="fa fa-caret-down"></i></button>          
+              <!-----------Dropdown Menu-------->
+              <div class="dropdown-content">
+                <a href="../clubs/clubs.html">Clubs</a>
+                <a href="../coaches/coaches.html">Coaches</a>
+                <a href="../Schedule/Schedule.html">Schedule</a>
+                <a href="../Payment/Payment.html">Payment</a>
+                <a href="../MemberShips/Memberships.html">MemberShips</a>
+            </div>
+        </div> 
+        <a href="../Login_page/Login.html"><i class="fa-solid fa-user-plus fa-1x"></i> Login</a>
+        <a href="../contact us/ContactUS.html"><i class="fa-solid fa-phone fa-1x"></i> Contact Us</a>
+      </div>    
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="schedule-container">
+    <div class="welcome-card">
+        <h1>Welcome Back, <span>Member</span>!</h1>
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fa-solid fa-user-tie"></i>
+                <p><strong>Coach:</strong> Mohamed Hassan</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-calendar-check"></i>
+                <p><strong>Member Since:</strong> 15 Mar 2025</p>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-calendar-xmark"></i>
+                <p><strong>Expires On:</strong> 15 Mar 2026</p>
+            </div>
+            <div class="info-item level">
+                <i class="fa-solid fa-dumbbell"></i>
+                <p><strong>Level:</strong> <span class="level-pro">Professional</span></p>
+            </div>
+        </div>
+        <div class="program-badge">Arnold Split (6 Days/Week)</div>
+    </div>
+
+    <div class="schedule-table">
+        <h2>Your Weekly Training Schedule</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Workout</th>
+                        <th>Muscle Groups</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="workout-day">
+                        <td>Saturday</td>
+                        <td>Chest + Back</td>
+                        <td>Pecs, Lats, Traps, Rhomboids</td>
+                        <td><span class="status active">Training</span></td>
+                    </tr>
+                    <tr class="workout-day">
+                        <td>Sunday</td>
+                        <td>Shoulders + Arms</td>
+                        <td>Delts, Biceps, Triceps, Forearms</td>
+                        <td><span class="status active">Training</span></td>
+                    </tr>
+                    <tr class="workout-day">
+                        <td>Monday</td>
+                        <td>Legs</td>
+                        <td>Quads, Hamstrings, Calves, Glutes</td>
+                        <td><span class="status active">Training</span></td>
+                    </tr>
+                    <tr class="rest-day">
+                        <td>Tuesday</td>
+                        <td>Rest Day</td>
+                        <td>Full Recovery</td>
+                        <td><span class="status rest">Rest</span></td>
+                    </tr>
+                    <tr class="workout-day">
+                        <td>Wednesday</td>
+                        <td>Chest + Back</td>
+                        <td>Pecs, Lats, Traps, Rhomboids</td>
+                        <td><span class="status active">Training</span></td>
+                    </tr>
+                    <tr class="workout-day">
+                        <td>Thursday</td>
+                        <td>Shoulders + Arms</td>
+                        <td>Delts, Biceps, Triceps, Forearms</td>
+                        <td><span class="status active">Training</span></td>
+                    </tr>
+                    <tr class="workout-day">
+                        <td>Friday</td>
+                        <td>Legs</td>
+                        <td>Quads, Hamstrings, Calves, Glutes</td>
+                        <td><span class="status active">Training</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="note">* Repeat the same split every week. Train hard, recover harder!</p>
+    </div>
+</main>
+
+<!----------------------Footer--------------------------->
+<footer>
+    <!----------Footer Curved Background------------------->
+    <div class="custom-shape-divider-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+    <!-----------Upper Footer Container----------->
+    <div class="footercontainer">
+        <!----------- 1st Part {Credit}-------->
+        <div id="footercredit" class="footer-content">
+            <h3>Credits</h3>
+            <ul class="credit">
+                <li><p>Eng • Mazen Emad</p></li>
+                <li><p>Eng • Ahmed Ali</p></li>
+                <li><p>Eng • Jana Shebl</p></li>
+                <li><p>Eng • Haneen Khaled</p></li>
+                <li><p>Eng • Abdallah Sayed</p></li>
+                <li><p>Eng • Youssef Ahmed</p></li>
+                <li><p>Eng • Mohammed Yousry</p></li>
+            </ul>
+        </div>
+        <!----------- 2nd Part {Quick Links}-------->
+        <div id="footerlinks" class="footer-content">
+            <h3>Quick Links</h3>
+            <ul class="quicklinks">
+                <li><a href="../Home_Page/home.html">Home</a></li>
+                <li><a href="../clubs/clubs.html">Clubs</a></li>
+                <li><a href="../coaches/coaches.html">Coaches</a></li>
+                <li><a href="../Schedule/Schedule.html">Schedule</a></li>
+                <li><a href="../contact us/ContactUS.html">Contact US</a></li>
+                <li><a href="../MemberShips/Memberships.html">MemberShips</a></li>
+            </ul>
+        </div>
+        <!----------- 3nd Part {Contact Us}-------->
+        <div id="footercontact" class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Email: planetfitness@exp.com</p>
+            <p>Phone: +020 114 6511 702</p>
+        </div>
+        <!----------- 4th Part {Social Media}-------->
+        <div id="footerfollow" class="footer-content">
+            <img id="footerlogo" src="Images/Planet_Fitness Logo.svg" alt="Logo">
+            <h3>Follow Us</h3>
+            <ul class="social-icons">
+                <li class="Blue"><a href="https://www.linkedin.com/in/mazen-emad-abdelsattar-96118b342?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin fa-2x fa-fade"></i></a></li>
+                <li class="github"><a  href="https://github.com/MazenEmadAbdelsattar" target="_blank"><i class="fa-brands fa-github fa-2x fa-fade"></i></a></li>
+                <li class="Blue"><a href="https://www.facebook.com/profile.php?id=100052692786291" target="_blank"><i class="fa-brands fa-facebook fa-2x fa-fade"></i></a></li>
+                <li class="instagram"><a href="https://www.instagram.com/iammazenemad" target="_blank"><i class="fa-brands fa-instagram fa-2x fa-fade" ></i></a></li>
+                <li class="Blue"><a href="#" target="_blank"><i class="fa-brands fa-twitter fa-2x fa-fade" ></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!--------------Lower Footer Container----------->
+    <div class="bottom-bar">
+        <p>&copy; 2026 Planet Fitness &trade;     . All Rights Reserved   &reg; </p>
+        <!-- <p>built by Eng • Mazen Emad</p> -->
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
