@@ -10,6 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+        <!---------------Planet Fitness Logo------------------->
+        <img class="LOGO" src="../coaches/Images/Planet_Fitness Logo.svg" alt="Planet Fitness Logo">
+        <!--NavBar-->
+        <div class="Navlinks">
+            <a href="../Home_Page/home.html"><i class="fa-solid fa-house"></i> Home</a>
+            <!-- drop -->
+            <div class="dropdown">
+                <!-- buttons -->
+                <button class="dropbtn"><i class="fa-solid fa-list fa-1x"></i> Categories <i class="fa fa-caret-down"></i></button>
+                <!-- menu -->
+                <div class="dropdown-content">
+                    <a href="../clubs/clubs.html">Clubs</a>
+                    <a href="../coaches/coaches.html">Coaches</a>
+                    <a href="../Schedule/Schedule.html">Schedule</a>
+                    <a href="../Payment/Payment.html">Payment</a>
+                    <a href="../MemberShips/Memberships.html">MemberShips</a>
+                </div>
+            </div> 
+            <a href="../Login_page/Login.html"><i class="fa-solid fa-user-plus fa-1x"></i> Login</a>
+            <a href="../contact us/ContactUS.html"><i class="fa-solid fa-phone fa-1x"></i> Contact Us</a>
+        </div>
+        </nav>
+    </header>
+
     <!-- Welcome Section -->
     <section class="welcome">
         <div class="welcome-content">
@@ -19,32 +46,7 @@
         </div>
     </section>
 
-<!-- Navigation Bar -->
-<header>
-    <nav>
-      <!---------------Planet Fitness Logo------------------->
-      <img class="LOGO" src="../coaches/Images/Planet_Fitness Logo.svg" alt="Planet Fitness Logo">
-      <!--NavBar-->
-      <div class="Navlinks">
-        <a href="../Home_Page/home.html"><i class="fa-solid fa-house"></i> Home</a>
-        <!-- drop -->
-          <div class="dropdown">
-              <!-- buttons -->
-              <button class="dropbtn"><i class="fa-solid fa-list fa-1x"></i> Categories <i class="fa fa-caret-down"></i></button>
-              <!-- menu -->
-              <div class="dropdown-content">
-                <a href="../clubs/clubs.html">Clubs</a>
-                <a href="../coaches/coaches.html">Coaches</a>
-                <a href="../Schedule/Schedule.html">Schedule</a>
-                <a href="../Payment/Payment.html">Payment</a>
-                <a href="../MemberShips/Memberships.html">MemberShips</a>
-            </div>
-        </div> 
-        <a href="../Login_page/Login.html"><i class="fa-solid fa-user-plus fa-1x"></i> Login</a>
-        <a href="../contact us/ContactUS.html"><i class="fa-solid fa-phone fa-1x"></i> Contact Us</a>
-      </div>
-    </nav>
-</header>
+
 
     <!-- page -->
     <main class="container">
@@ -85,7 +87,7 @@
                             <span class="stat-label">Certified</span>
                         </div>
                     </div>
-                    <button class="contact-coach-btn" data-coach="Alex Johnson">Contact Coach</button>
+                    <button class="contact-coach-btn" data-coach="Ahmed El-Sherif">Contact Coach</button>
                 </div>
             </div>
 
@@ -119,7 +121,7 @@
                             <span class="stat-label">Styles</span>
                         </div>
                     </div>
-                    <button class="contact-coach-btn" data-coach="Jaxon Merrick">Contact Coach</button>
+                    <button class="contact-coach-btn" data-coach="Nouran Mahmoud">Contact Coach</button>
                 </div>
             </div>
 
@@ -153,7 +155,7 @@
                             <span class="stat-label">Certified</span>
                         </div>
                     </div>
-                    <button class="contact-coach-btn" data-coach="Marcus Rodriguez">Contact Coach</button>
+                    <button class="contact-coach-btn" data-coach="Mohamed Hassan">Contact Coach</button>
                 </div>
             </div>
 
@@ -187,7 +189,7 @@
                             <span class="stat-label">Coach</span>
                         </div>
                     </div>
-                    <button class="contact-coach-btn" data-coach="Darius Stonefield">Contact Coach</button>
+                    <button class="contact-coach-btn" data-coach="Salma Abdelrahman">Contact Coach</button>
                 </div>
             </div>
         </section>
@@ -252,10 +254,12 @@
             document.querySelectorAll('.contact-coach-btn').forEach(btn => {
                 btn.addEventListener('click', function() {
                     const coachName = this.getAttribute('data-coach');
-                    alert(`🏋️‍♂️ Interested in training with ${coachName}? We'll contact you soon to schedule your first session!`);
+                    alert(`🏋️‍♂️ Interested in training with ${coachName}? you can send us a message and We'll contact you soon.`);
+                    window.location.replace("/contact us/ContactUs.html")
                 });
             });
         });
+
     </script>
 
 </body>

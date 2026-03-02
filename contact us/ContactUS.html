@@ -44,100 +44,141 @@
         </nav>
     </header>
 
-  <main class="contact_us_page">
+<main class="contact_us_page">
 
-    <div class="breadcrumb-section">
-      <div class="breadcrumb">
-        <a href="../Home_Page/home.html">Home</a> / 
-        <span>Contact Us</span>
-      </div>
-      <h1 class="page-title">Contact Us</h1>
+  <div class="breadcrumb-section reveal slide-up">
+    <div class="breadcrumb">
+      <a href="../Home_Page/home.html">Home</a> /
+      <span>Contact Us</span>
+    </div>
+    <h1 class="page-title">Contact Us</h1>
+  </div>
+
+  <div class="map-container reveal slide-up">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110535.07263973569!2d30.84066589726562!3d30.03051640000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b99f26e61c3%3A0x307324186283476b!2sGold's%20Gym%20Elite%20-%20Sheikh%20Zayed!5e0!3m2!1sen!2seg!4v1764529908879!5m2!1sen!2seg"
+      width="600"
+      height="450"
+      style="border:0;"
+      loading="lazy">
+    </iframe>
+  </div>
+
+  <div class="contact-section">
+
+    <div class="get_in_touch reveal slide-left">
+
+      <h2>Get In Touch</h2>
+
+      <p>
+        Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+      </p>
+
+      <form onsubmit="event.preventDefault(); const msg = document.getElementById('successMessage'); msg.classList.add('show');
+      this.reset(); setTimeout(() => { msg.classList.remove('show'); }, 2000);">
+        <div class="name-row">
+          <input type="text" name="first_name" placeholder="First Name*" required>
+          <input type="text" name="last_name" placeholder="Last Name*" required>
+        </div>
+
+        <input type="email" name="email" placeholder="Email*" required>
+
+        <input type="tel" name="phone" placeholder="Phone">
+
+        <textarea name="message" rows="6" placeholder="Your Message*" required></textarea>
+
+        <button type="submit" class="send_message">Send Message</button>
+
+        <div id="successMessage" class="success">Message Sent ✓</div>
+
+      </form>
+
     </div>
 
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110535.07263973569!2d30.84066589726562!3d30.03051640000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585b99f26e61c3%3A0x307324186283476b!2sGold&#39;s%20Gym%20Elite%20-%20Sheikh%20Zayed!5e0!3m2!1sen!2seg!4v1764529908879!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""
-        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
+    <div class="contact-card reveal slide-right">
 
-    <div class="contact-section">
-      <div class="get_in_touch">
-        <h2>Get In Touch</h2>
-        <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+      <h3>Contact Details</h3>
 
-        <form action="#" method="POST" onsubmit="alert('Report Successfully'); return false;">   
-          <div class="name-row">
-            <input type="text" name="first_name" placeholder="First Name*" required />
-            <input type="text" name="last_name" placeholder="Last Name*" required />
-          </div>
-          <input type="email" name="email" placeholder="Email*" required />
-          <input type="tel" name="phone" placeholder="Phone" />
-          <textarea name="message" rows="6" placeholder="Your Message*" required></textarea>
-          <button type="submit" class="send_message">Send Message</button>
-        </form>
+      <p>We're here to help! Reach out via any of the methods below.</p>
+
+      <div class="contact-item">
+        <div class="contact-title">
+          <i class="fas fa-map-marker-alt"></i> Address
+        </div>
+        <p>Sheikh Zayed City, Giza Governorate, Egypt</p>
       </div>
 
-      <div class="contact-card">
-        <h3>Contact Details</h3>
-        <p>We're here to help! Reach out via any of the methods below.</p>
-
-        <div class="contact-item">
-          <div class="contact-title"><i class="fas fa-map-marker-alt"></i> Address</div>
-          <p>Sheikh Zayed City, Giza Governorate, Egypt</p>
+      <div class="contact-item">
+        <div class="contact-title">
+          <i class="fas fa-envelope"></i> Email
         </div>
-        <div class="contact-item">
-          <div class="contact-title"><i class="fas fa-envelope"></i> Email</div>
-          <p>info@planetfitness-eg.com</p>
-        </div>
-        <div class="contact-item">
-          <div class="contact-title"><i class="fas fa-phone"></i> Phone</div>
-          <p>+20 114 6511 702</p>
-        </div>
-        <div class="contact-item">
-          <div class="contact-title">Follow Us</div>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
+        <p>info@planetfitness-eg.com</p>
       </div>
+
+      <div class="contact-item">
+        <div class="contact-title">
+          <i class="fas fa-phone"></i> Phone
+        </div>
+        <p>+20 114 6511 702</p>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-title">Follow Us</div>
+
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- Our Offices -->
-    <div class="our-offices">
-      <h2>Our Clubs Locations</h2>
-      <div class="offices-container">
-        <div class="office">
-          <h3>Sheikh Zayed Club</h3>
-          <p>Sheikh Zayed City, Giza Governorate, Egypt</p>
-          <a href="https://maps.google.com/?q=Gold's Gym Elite Sheikh Zayed" target="_blank" class="map-link">
-          See on Map <i class="fa-solid fa-location-dot"></i></a>
-          <p><i class="fa-solid fa-envelope"></i> zayed@planetfitness.com</p>
-          <p><i class="fa-solid fa-phone"></i> +20 102 345 6789</p>
-        </div>
-        <div class="office">
-          <h3>Maadi Club</h3>
-          <p>Maadi, Cairo Governorate, Egypt</p>
-          <a href="https://maps.google.com/?q=Gold's Gym Maadi" target="_blank" class="map-link">
-          See on Map <i class="fa-solid fa-location-dot"></i></a>
-          <p><i class="fa-solid fa-envelope"></i> maadi@planetfitness.com</p>
-          <p><i class="fa-solid fa-phone"></i> +20 109 876 5432</p>
-        </div>
-        <div class="office">
-          <h3>Beverly Hills Club</h3>
-          <p>Beverly Hills, Sheikh Zayed, Egypt</p>
-          <a href="https://maps.google.com/?q=Gold's Gym Beverly Hills Cairo" target="_blank" class="map-link">
-          See on Map <i class="fa-solid fa-location-dot"></i></a>
-          <p><i class="fa-solid fa-envelope"></i> beverly@planetfitness.com</p>
-          <p><i class="fa-solid fa-phone"></i> +20 111 222 3333</p>
-        </div>
+  </div>
+
+  <div class="our-offices reveal slide-up">
+
+    <h2>Our Clubs Locations</h2>
+
+    <div class="offices-container">
+
+      <div class="office reveal slide-up">
+        <h3>Sheikh Zayed Club</h3>
+        <p>Sheikh Zayed City, Giza Governorate, Egypt</p>
+        <a href="https://maps.google.com/?q=Gold's Gym Elite Sheikh Zayed" target="_blank" class="map-link">
+          See on Map <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <p><i class="fa-solid fa-envelope"></i> zayed@planetfitness.com</p>
+        <p><i class="fa-solid fa-phone"></i> +20 102 345 6789</p>
       </div>
+
+      <div class="office reveal slide-up">
+        <h3>Maadi Club</h3>
+        <p>Maadi, Cairo Governorate, Egypt</p>
+        <a href="https://maps.google.com/?q=Gold's Gym Maadi" target="_blank" class="map-link">
+          See on Map <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <p><i class="fa-solid fa-envelope"></i> maadi@planetfitness.com</p>
+        <p><i class="fa-solid fa-phone"></i> +20 109 876 5432</p>
+      </div>
+
+      <div class="office reveal slide-up">
+        <h3>Beverly Hills Club</h3>
+        <p>Beverly Hills, Sheikh Zayed, Egypt</p>
+        <a href="https://maps.google.com/?q=Gold's Gym Beverly Hills Cairo" target="_blank" class="map-link">
+          See on Map <i class="fa-solid fa-location-dot"></i>
+        </a>
+        <p><i class="fa-solid fa-envelope"></i> beverly@planetfitness.com</p>
+        <p><i class="fa-solid fa-phone"></i> +20 111 222 3333</p>
+      </div>
+
     </div>
 
-  </main>
+  </div>
+
+</main>
 
     <!----------------------Footer--------------------------->
     <footer>
@@ -223,6 +264,21 @@
             <!-- <p>built by Eng • Mazen Emad</p> -->
         </div>
     </footer>
+    <script>
+      const elements = document.querySelectorAll('.slide-left, .slide-right, .slide-up');
 
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting){
+            entry.target.style.animationPlayState = 'running';
+          }
+        });
+      });
+
+      elements.forEach(el => {
+        el.style.animationPlayState = 'paused';
+        observer.observe(el);
+      });      
+    </script>>
 </body>
 </html>

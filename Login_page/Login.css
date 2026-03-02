@@ -4,34 +4,58 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     margin: 0;
     height: 100vh;
     overflow: hidden;
     background-image: url("../Login_page/Image/Wallpaper.jfif");
     background-size: cover;
     animation: fadeIn 0.5s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* مزيج متدرج بين الأزرق الداكن والأخضر الخاص بك مع لمسة نعومة */
+    background: linear-gradient(
+        135deg, 
+        #295d7a 0%,    
+        #1a4a63 40%,   
+        #22b573 100%   
+    );
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite; /* أنيميشن لجعل الخلفية تتحرك ببطء */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* أنيميشن بسيط يعطي حيوية للخلفية */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0.5;
-  }
-
-  to {
-    opacity: 1;
-  }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
+
 form {
-    padding: 5px;
+    /* padding: 5px; */
     background-color: rgba(55, 55, 56, 0.3);
-    width: 35%;
-    height: 500px;
+    /* width: 35%; */
+    height: 90vh;
     text-align: center;
-    margin: 90px auto;
+    /* margin: 90px auto; */
     border-radius: 40px;
-    box-shadow: 0 0 10px 10px rgb(61, 94, 81);
+    /* box-shadow: 0 0 10px 10px rgb(61, 94, 81); */
 }
 
 div {
@@ -43,7 +67,7 @@ h1 {
     text-align: center;
     color: #080808;
     font-size: 2.7em;
-    text-shadow: 2px 2px rgb(52, 61, 66);
+    /* text-shadow: 2px 2px rgb(52, 61, 66); */
     font-family: "Poppins", serif;
 
 }
@@ -51,7 +75,7 @@ h1 {
 .welcome {
     opacity: 0;
     color: #080808;
-    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(247, 247, 247);
+    /* text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgb(247, 247, 247); */
     transform: translateY(20px);
     transition: opacity 1.5s ease, transform 1.2s ease;
     font-family: "Poppins", serif;
@@ -66,8 +90,9 @@ h1 {
 .user input,
 .pass input {
     border: none;
-    border-bottom: 1px solid #000;
-    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 10px 15px;
     font-size: medium;
     width: 70%;
     background-color: transparent;
@@ -85,7 +110,7 @@ h1 {
 
 .forgot-pass,
 .box {
-    padding: 30px;
+        margin: 30px 30px 20px;
     display: inline;
     font-size: smaller;
 }
@@ -108,7 +133,7 @@ h1 {
 .pass i {
     position: absolute;
     top: 50%;
-    right: 7em;
+    right: 8em;
     transform: translateY(-50%);
     font-size: small;
 }
@@ -117,21 +142,14 @@ h1 {
 .forgot-pass a,
 label {
     color: #080808;
-    font-size: 13px;
-}
-
-.forgot-pass a {
-    text-decoration: none;
-}
-
-.forgot-pass a:hover {
-    text-decoration: underline;
+    font-size: 15px;
 }
 
 button {
     position: relative;
     overflow: hidden;
     margin: 35px auto 30px auto;
+    border: none;
     padding: 4px;
     width: 65%;
     border-radius: 15px;
@@ -156,15 +174,21 @@ a {
 .pass input:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3);
-    transition: 1s ease;
+    transition: 0.3s ease;
+    border: none;
+} 
 
-
+.user input:focus,
+.pass input:focus{
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3);
 }
 
-p,
+/* p,
 a:hover {
     text-decoration: none;
-}
+} */
 
 button::after {
     content: "";
@@ -179,10 +203,13 @@ button::after {
 
 button:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.3); */
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 button:hover::after {
     left: 120%;
-}
+} 
+
+
+

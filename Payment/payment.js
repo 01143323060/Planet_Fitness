@@ -158,6 +158,7 @@ function confirmPayment() {
   }
 
   alert("Payment Completed Successfully, welcome to Planet Fitness family.");
+  window.location.replace("/Schedule/Schedule.html")
 }
 
 window.onload = () => {
